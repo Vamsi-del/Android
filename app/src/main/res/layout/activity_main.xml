@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="#70FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:gravity="center"
+        android:text="Register Form"
+        android:textColor="#D50000"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/eshape"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:hint="Enter Your Name" />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email address"
+        android:drawableLeft="@drawable/email"
+        android:background="@drawable/eshape"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"/>
+
+    <EditText
+        android:id="@+id/Pa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/lock"
+        android:background="@drawable/eshape"
+        android:padding="10dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"/>
+    <EditText
+        android:id="@+id/CP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/lock"
+        android:background="@drawable/eshape"
+        android:padding="10dp"
+        android:hint="Confirm Your Password"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"/>
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:entries="@array/branch"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="Gender"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary" />
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_weight="1"
+        />
+    <RadioButton
+        android:id="@+id/F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:layout_weight="1"
+        />
+        </RadioGroup>
+    
+
+    <TextView
+        android:id="@+id/lan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Languages Known*"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        />
+    <CheckBox
+        android:id="@+id/tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telugu"
+        />
+
+    <CheckBox
+        android:id="@+id/hin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hindi"
+        />
+    <CheckBox
+        android:id="@+id/en"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="English" />
+    <TextView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/Google"
+        android:autoLink="all"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <ImageButton
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="15dp"
+        android:background="#6C6868"
+        android:src="@drawable/submit"
+        android:onClick="Register"/>
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Registration</string>
+    <string name="Google">This is Our WebSite www.google.com</string>
+    <string-array name="branch">
+        <item>----Select Your Branch----</item>
+        <item>EEE</item>
+        <item>ECE</item>
+        <item>CSE</item>
+        <item>MECH</item>
+        <item>Civil</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
